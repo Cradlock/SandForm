@@ -1,4 +1,5 @@
 build_linux/
 build_windows/
 
+.cache/
 
