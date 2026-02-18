@@ -30,6 +30,10 @@
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
+├── plugin_manager  
+│   ├── CMakeLists.txt
+│   ├── include
+│   └── src
 ├── ui   
 │   ├── CMakeLists.txt
 │   ├── include
@@ -71,6 +75,9 @@
 
 ### `ui` dynamic 
 UI - отрисовка интерфейса. (кнопки,меню и т.д)
+
+### `plugin_manager` static 
+Загружает динамические части проекта
 
 ### `app.cpp`
 Точка входа которая все запускает.
