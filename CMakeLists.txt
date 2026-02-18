@@ -1,17 +1,22 @@
-cmake_minium_required()
-
+cmake_minimum_required(VERSION 3.15)
 
 project(sandform)
 
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
+add_subdirectory(all/core)
+add_subdirectory(all/input)
+add_subdirectory(all/logic)
+add_subdirectory(all/modding)
+add_subdirectory(all/render)
+add_subdirectory(all/resource_manager)
+add_subdirectory(all/sound)
+add_subdirectory(all/ui)
 
-
-
-
-
-
-
+add_executable(app all/app.cpp) 
 
 
 
