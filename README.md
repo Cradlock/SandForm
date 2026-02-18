@@ -8,49 +8,65 @@
 *Код*
 ```
 .
-├── app.cpp <- Точка входа
-├── core <- 
+├── app.cpp  
+├── CMakeLists.txt  
+├── core 
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
-├── input <-
+├── input  
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
-├── modding <- 
+├── modding  
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
-├── render <- 
+├── render  
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
-├── resource_manager <- 
+├── resource_manager  
 │   ├── CMakeLists.txt
 │   ├── include
 │   └── src
-└── sound <-
+└── sound 
     ├── CMakeLists.txt
     ├── include
     └── src
 
 
 ```
----
-*Сборка*
-```
 
-assets/*
-mods/*
-plugins/*
+## Детали структуры
 
-settings.json
-icon.ico 
-Game.exe
+### `core`
+Нужен для системы логирования,общих базовых типов данных,
+управления тиками игры.
 
-...dynamic_modules
 
-```
+### `input` 
+Модуль для обработки действий от игрока.(Нажатия клавиш,работа с мышью,геймпад)
+
+
+### `modding`
+Основной клиентский API,нужен чтобы пользователи могли писать свою логику для их игры.
+
+### `render` 
+Графический движок.Отрисовка всех элементов игры
+
+### `resource_manager`
+Управление ресурсами (внешними файлами).
+Все файлы которые будут использоватся (png,gif,mp3,json) будут получатся кешироватся
+через этот модуль
+
+### `sound` 
+Работа со звуком.
+
+### `app.cpp`
+Точка входа которая все запускает.
+
+
 
 ## Цикл работы
 ```
