@@ -12,12 +12,11 @@ add_subdirectory(all/input)
 add_subdirectory(all/logic)
 add_subdirectory(all/modding)
 add_subdirectory(all/render)
-add_subdirectory(all/resource_manager)
+add_subdirectory(all/plugin_manager)
 add_subdirectory(all/sound)
 add_subdirectory(all/ui)
 
 add_executable(app all/app.cpp) 
-
 
 
 # Подключение nvim
