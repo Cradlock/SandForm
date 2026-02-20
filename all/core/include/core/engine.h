@@ -1,24 +1,32 @@
 #pragma once 
 
 
-
+#include "core/interfaces/IModule.h"
+#include "core/interfaces/ITickable.h"
+#include <vector>
+namespace core {
 class Engine{
-   
-  
-  Engine(){
 
-  } 
+
+public:
+  Engine();
   
+  // Инициализация всех классов и модулей
   void Init();
 
-  void Update();
-
+  
+  // Отключение всех классов и модулей
   void Shutdown();
 
-  ~Engine(){
 
-  }
+
+private:
+  void init_dynamic();
+
+  std::vector<IModule*> modules;
+  std::vector<ITickable*> tickables;
+
 };
 
-
+}
 

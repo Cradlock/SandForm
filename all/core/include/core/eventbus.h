@@ -1,14 +1,18 @@
-
 #pragma once 
 
 
-class Config{  
+class EventBus{
 
 public:
+  EventBus(){
+
+  }
 
   static void init();
+  
 
   static void shutdown();
 
-};
 
+
+};

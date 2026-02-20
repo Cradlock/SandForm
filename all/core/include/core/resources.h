@@ -1,14 +1,15 @@
-
 #pragma once 
 
 
-class Config{  
-
+class ResourceManager{
 public:
-
   static void init();
 
   static void shutdown();
 
+
+
+
 };
+
 

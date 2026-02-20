@@ -1,8 +1,15 @@
-#include "core/config.h"
+#include "core/engine.h"
 
 int main(){
   
-  Config::init();
+  core::Engine engine;
   
+  engine.Init();
+
+
   return 0;
 }
+
+
+
+
