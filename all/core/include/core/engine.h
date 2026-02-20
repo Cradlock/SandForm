@@ -5,8 +5,8 @@
 #include "core/interfaces/ITickable.h"
 #include <vector>
 namespace core {
-class Engine{
 
+class Engine{
 
 public:
   Engine();

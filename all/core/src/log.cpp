@@ -10,8 +10,7 @@
 
 void Logger::init(){
   std::cout << "Logger init" << std::endl;
-  
-  
+  // Создание папки logs   
 }
 
 void Logger::shutdown(){
@@ -63,12 +62,12 @@ void Logger::write_log_sync(
 
 
 void Logger::fatal(std::string_view msg){
-  write_log_sync("fatal.log","FATAL",msg);
+  write_log_sync("logs/fatal.log","FATAL",msg);
 }
 
 
 void Logger::error(std::string_view msg){
-  write_log_sync("error.log","ERROR",msg);
+  write_log_sync("logs/error.log","ERROR",msg);
 }
 
 
