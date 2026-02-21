@@ -6,7 +6,8 @@ int main(){
   
   engine.Init();
 
-
+  
+  engine.Shutdown();
   return 0;
 }
 

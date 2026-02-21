@@ -1,9 +1,6 @@
 #pragma once 
 
 
-
-
-
 #include <atomic>
 #include <condition_variable>
 #include <mutex>
@@ -53,7 +50,7 @@ private:
 
 private:
   // Дополнительные функции
-  static void write_log_sync(
+  static void write_log(
       std::string_view filename, 
       std::string_view prefix, 
       std::string_view msg
@@ -69,6 +66,9 @@ private:
 
   static void fatal(std::string_view);
   
+  static void log_writer(); 
 
-
+  static void async_log(std::string_view msg,TypeLog type);
 };
+
+
