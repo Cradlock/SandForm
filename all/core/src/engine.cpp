@@ -17,20 +17,21 @@ void core::Engine::Init(){
   // Менеджер ресурсов
   ResourceManager::init();
   
-  // Потом загружаем конфиги 
-  Config::init();
-  
   // Шина событий 
   EventBus::init();
+
+  // Потом загружаем конфиги 
+  Config::init();
+ 
 }
 
 
 void core::Engine::Shutdown(){
 // В обратном порядке инициалиазции
 
-  EventBus::shutdown();
-
   Config::shutdown();
+  
+  EventBus::shutdown();
 
   ResourceManager::shutdown();
 

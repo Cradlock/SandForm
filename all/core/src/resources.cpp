@@ -1,9 +1,17 @@
 #include "core/resources.h"
 #include <iostream>
+#include <filesystem>
+
+
+namespace fs = std::filesystem;
+
+fs::path ResourceManager::assets_path="assets/";
+
 
 
 void ResourceManager::init(){
-  std::cout << "Resource manager init" << std::endl;
+
+
 }
 
 
