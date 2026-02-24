@@ -1,14 +1,21 @@
 {
-  "required":[
+  "modules":[
     {
       "id":"render",
-      "path":"modules/render.dll"
+      "path":"modules/render.dll",
+      "required":true
+    },
+    {
+      "id":"ui",
+      "path":"modules/ui.dll",
+      "required":true
+    },
+    {
+      "id":"sound",
+      "path":"modules/sound.dll",
+      "required":false
     }
-  ],
-  "optional":[
-
-  ]
-
+ ]
 }
 
 

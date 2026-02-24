@@ -1,24 +1,24 @@
 set(CORE_SOURCES
-  src/config.cpp 
-  src/log.cpp 
-  src/tick.cpp 
+  src/config/config.cpp  
+  src/log/log.cpp 
+  src/tick/tick.cpp 
   src/engine.cpp 
-  src/eventbus.cpp
-  src/resources.cpp
-  src/utils.cpp 
-
+  src/eventbus/eventbus.cpp
+  src/resources/main.cpp
+  src/resources/types.cpp
+  src/utils/general.cpp 
 )
-
-find_package(nlohmann_json CONFIG REQUIRED)
-
 
 add_library(core SHARED ${CORE_SOURCES})
 
-target_link_libraries(main PRIVATE nlohmann_json::nlohmann_json)
 
 target_include_directories(core PUBLIC 
   include 
 )
+
+find_package(nlohmann_json CONFIG REQUIRED)
+
+target_link_libraries(core PRIVATE nlohmann_json::nlohmann_json)
 
 
 

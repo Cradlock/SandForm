@@ -1,8 +1,8 @@
 #include "core/engine.h"
-#include "core/config.h"
-#include "core/eventbus.h"
-#include "core/log.h"
-#include "core/resources.h"
+#include "core/services/config.h"
+#include "core/services/eventbus.h"
+#include "core/services/log.h"
+#include "core/services/resources.h"
 
 
 core::Engine::Engine(){

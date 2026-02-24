@@ -1,4 +1,4 @@
-#include "core/config.h" 
+#include "core/services/config.h" 
 #include <iostream>
 
 void Config::init(){

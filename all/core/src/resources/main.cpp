@@ -1,17 +1,15 @@
-#include "core/resources.h"
+#include "core/services/resources.h"
 #include <iostream>
 #include <filesystem>
 
 
 namespace fs = std::filesystem;
 
-fs::path ResourceManager::assets_path="assets/";
 
 
 
 void ResourceManager::init(){
-
-
+  
 }
 
 
