@@ -3,7 +3,7 @@
 
 
 void EventBus::init(){
-  std::cout << "EventBus init" << std::endl;
+  std::cout << "EventBus not init" << std::endl;
 }
 
 

@@ -7,7 +7,7 @@
 core::Engine engine;
 
 // Менеджер плагинов
-PluginManager plugin_manager("modules");
+PluginManager plugin_manager("modules.json","modules");
 
 int main(){ 
   

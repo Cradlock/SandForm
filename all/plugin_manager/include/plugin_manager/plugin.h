@@ -4,10 +4,9 @@
 
 
 #include <filesystem>
-#include <nlohmann/json_fwd.hpp>
 #include <string>
 
-
+#include <nlohmann/json.hpp>
 
 class Plugin{
   bool required;
@@ -16,7 +15,8 @@ class Plugin{
   
 
 public:
-  Plugin(const nlohmann::json& obj);
+
+    Plugin(const nlohmann::json& obj);
 
 
 };

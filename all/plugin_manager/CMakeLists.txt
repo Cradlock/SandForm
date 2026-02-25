@@ -1,12 +1,12 @@
 set(SOURCES
   src/manager.cpp
+  src/plugin.cpp
 )
 
 
 add_library(plugin_manager STATIC ${SOURCES})
 
 # Поиск зависимостей
-find_package(nlohmann_json CONFIG REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system filesystem) 
 
 
@@ -27,7 +27,6 @@ target_link_libraries(plugin_manager PRIVATE core)
 
 # Линковка
 target_link_libraries(plugin_manager PRIVATE Boost::system Boost::filesystem)
-target_link_libraries(core PRIVATE nlohmann_json::nlohmann_json)
 
 
 

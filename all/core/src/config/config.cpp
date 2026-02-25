@@ -2,7 +2,7 @@
 #include <iostream>
 
 void Config::init(){
-  std::cout << "Config init" << std::endl;
+  std::cout << "Config not init" << std::endl;
 
 
 

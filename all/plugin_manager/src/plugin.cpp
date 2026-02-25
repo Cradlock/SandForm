@@ -25,8 +25,6 @@ Plugin::Plugin(const json& obj){
   
   required = obj.value("required",false);
   
-  std::cout << id << std::endl;
-  std::cout << path.string() << std::endl;
   this->id = id;
   this->path = path;
   this->required = required;

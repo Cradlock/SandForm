@@ -70,3 +70,25 @@ class IResource{
 };
 
 
+
+class TextureResource : public IResource{
+  public:
+
+  void load() override;
+
+
+};
+
+
+
+
+
+
+class StreamedResource : public IResource{
+ public:
+    void load() override;
+
+
+};
+
+

@@ -23,40 +23,8 @@ PluginManager::PluginManager(fs::path modules_file,std::string main_key_p) :
 
 
 bool PluginManager::init(){
-  std::cout << "Plugin manager initialized" << std::endl;
   
-  std::ifstream modules_file(modules);
-  if(!modules_file.is_open()){
-    Logger::log("Not found modules.json ",Logger::TypeLog::FATAL);
-    return false;
-  }
-
-try{
-  json data;
-  modules_file >> data;
-  
-  if(!this->check(data)){
-    return false;
-  } 
-  
-  for(const auto& item : data[this->main_key]){
-    this->plugins.push_back(Plugin(item));  
-  }
-  
-} catch (json::parse_error& er){
-  Logger::log("Parse error: "+std::string(er.what()) ,Logger::TypeLog::FATAL);
-  return false; 
-} catch (json::out_of_range& er){
-  
-  return false;
-} catch (json::other_error& er) {
-  
-  return false; 
-}
-
-
-    modules_file.close();
-  return true;
+ return true;
 }
 
 
