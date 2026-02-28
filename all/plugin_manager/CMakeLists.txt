@@ -4,30 +4,27 @@ set(SOURCES
 )
 
 
+
+# Настройки для boost 
+set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_MULTITHREADED ON)
+
+find_package(Boost 1.70 REQUIRED COMPONENTS dll)
+
+
 add_library(plugin_manager STATIC ${SOURCES})
 
-# Поиск зависимостей
-find_package(Boost REQUIRED COMPONENTS system filesystem) 
 
-
-
-# настройка для boost.DLL
-set(Boost_USE_STATIC_LIBS OFF)
-if(WIN32)
-    target_compile_definitions(plugin_manager PRIVATE BOOST_ALL_DYN_LINK)
-endif()
 
 
 target_include_directories(plugin_manager PUBLIC include)
+target_include_directories(plugin_manager PRIVATE ${Boost_INCLUDE_DIRS})
+
 
 # Связь с core 
 target_link_libraries(plugin_manager PRIVATE core)
-
-
-
-# Линковка
-target_link_libraries(plugin_manager PRIVATE Boost::system Boost::filesystem)
-
+# Связь с Boost.DLL 
+target_link_libraries(plugin_manager PRIVATE ${Boost_LIBRARIES})
 
 
 

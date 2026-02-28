@@ -5,9 +5,10 @@ set(CORE_SOURCES
   src/engine.cpp 
   src/eventbus/eventbus.cpp
   src/resources/main.cpp
-  src/resources/types.cpp
   src/utils/general.cpp 
+  src/resources/types/json.cpp
 )
+
 
 add_library(core SHARED ${CORE_SOURCES})
 

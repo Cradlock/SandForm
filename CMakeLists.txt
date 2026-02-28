@@ -11,7 +11,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
 # Папка, куда будут падать все скомпилированные .dll и .exe
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Подключение зависимостей
 find_package(nlohmann_json REQUIRED)
@@ -36,6 +36,7 @@ add_custom_command(
 # Активация модулей 
 add_subdirectory(all/core)
 add_subdirectory(all/plugin_manager)
+add_subdirectory(all/logic)
 
 
 # Подключение core и plugin_manager
@@ -62,6 +63,30 @@ set(DESTINATION_FILE "${CMAKE_SOURCE_DIR}/compile_commands.json")
 if(NOT EXISTS ${DESTINATION_FILE})
     execute_process(COMMAND ${CMAKE_COMMAND} -E create_symlink ${SOURCE_FILE} ${DESTINATION_FILE})
 endif()
+
 endif()
+
+
+# Вставка базовых модулей
+if(MINGW)
+    # Список стандартных DLL, которые нужны MinGW программам
+    set(MINGW_LIBS libstdc++-6.dll libgcc_s_seh-1.dll libwinpthread-1.dll)
+
+    foreach(LIB_NAME ${MINGW_LIBS})
+        # Находим, все файлы
+        find_file(LIB_PATH_${LIB_NAME} NAMES ${LIB_NAME} PATHS "/usr/x86_64-w64-mingw32/bin" "/usr/lib/gcc/x86_64-w64-mingw32/bin")
+        
+        if(LIB_PATH_${LIB_NAME})
+            add_custom_command(TARGET app POST_BUILD
+                COMMAND ${CMAKE_COMMAND} -E copy_if_different "${LIB_PATH_${LIB_NAME}}" "$<TARGET_FILE_DIR:app>"
+                COMMENT "Copying ${LIB_NAME} to output directory"
+            )
+        endif()
+
+    endforeach()
+
+endif()
+
+
 
 

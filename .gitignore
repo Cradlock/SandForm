@@ -3,3 +3,4 @@ build_windows/
 
 .cache/
 bin/
+bin.*

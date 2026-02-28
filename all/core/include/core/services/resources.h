@@ -29,11 +29,12 @@ public:
 
   static void shutdown();
   
-  // Функция загрузки ресурса
-  static IResource* load(std::filesystem::path path);
+  // Создание ресурса
+  static IResource* create(std::filesystem::path path);
   
   // Функция для воркера 
   static void resource_worker();
+  
 
 private:
   // Отдельный поток 
@@ -46,7 +47,7 @@ private:
   std::queue<IResource*> load_queue;
 
   // Хранилище 
-  static std::unordered_map<std::string, IResource*> storage; 
+  static std::unordered_map<std::filesystem::path, IResource*> storage; 
   
 
 };
@@ -58,10 +59,12 @@ class IResource{
 
     virtual void load() = 0;
 
-    virtual ~IResource() = default;
+    virtual ~IResource() = 0;
+    
+    IResource(std::filesystem::path p);
+  
 
-
-  private:
+  protected:
     std::atomic<ResourceManager::State> state;
     std::size_t filesize;
     std::filesystem::path path;
