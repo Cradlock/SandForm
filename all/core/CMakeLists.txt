@@ -7,6 +7,8 @@ set(CORE_SOURCES
   src/resources/main.cpp
   src/utils/general.cpp 
   src/resources/types/json.cpp
+  src/resources/types/texture.cpp
+
 )
 
 

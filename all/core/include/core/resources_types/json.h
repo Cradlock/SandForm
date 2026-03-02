@@ -6,7 +6,7 @@
 #include <array>
 #include <filesystem>
 #include <string>
-
+#include <nlohmann/json.hpp>
 
 class JsonResource : public IResource{
 public:
@@ -16,8 +16,10 @@ public:
 
   void load() override;
   
+  static void registry();
   
-  static bool is_this(std::string_view ext);
+  
+private:
+  nlohmann::json data;
 
-    
 };
