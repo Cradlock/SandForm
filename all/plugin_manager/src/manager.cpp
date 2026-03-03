@@ -31,14 +31,14 @@ bool PluginManager::init(){
 
 bool PluginManager::check(const json& obj){
   if(!obj.contains(this->main_key)){
-    Logger::log("Key '" + this->main_key + "' not found", Logger::TypeLog::FATAL);
+    Logger::log("Key '" + this->main_key + "' not found", TypeLog::PE_FATAL);
     return false;
   }
     
   auto& modules_node = obj[this->main_key];
   
   if(!modules_node.is_array()){
-    Logger::log("'" + this->main_key + "' must be an array!", Logger::TypeLog::FATAL);
+    Logger::log("'" + this->main_key + "' must be an array!", TypeLog::PE_FATAL);
     return false;
   }
   

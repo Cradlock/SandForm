@@ -1,8 +1,17 @@
 #include "core/services/eventbus.h"
+#include <filesystem>
 #include <iostream>
 
 
-void EventBus::init(){
+
+std::filesystem::path EventBus::root;
+
+
+void EventBus::init(
+  const std::filesystem::path& root_p
+){
+  root = root_p;
+
   std::cout << "EventBus not init" << std::endl;
 }
 

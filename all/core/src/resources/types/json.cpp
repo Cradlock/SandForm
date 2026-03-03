@@ -37,11 +37,12 @@ void JsonResource::load(){
     }
     
     file >> this->data;
+    state.store(ResourceState::RES_STATE_SUCCESS);
   }catch(const nlohmann::json::parse_error& er){
-    Logger::log("JSON Parse Error: " + std::string(er.what()), Logger::TypeLog::WARNING);
+    Logger::log("JSON Parse Error at " + path.string() + " : " + std::string(er.what()), TypeLog::PE_WARNING);
     state.store(ResourceState::RES_STATE_ERROR_FORMAT);
   }catch(const std::exception& er){
-    Logger::log("Generic Error in JsonResource: " + std::string(er.what()) ,Logger::TypeLog::WARNING);
+    Logger::log("Generic Error in JsonResource at " + path.string() + " : " + std::string(er.what()) ,TypeLog::PE_WARNING);
     state.store(ResourceState::RES_STATE_ERROR_INTERNAL);
   }
 }

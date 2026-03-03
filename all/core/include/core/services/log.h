@@ -8,23 +8,26 @@
 #include <string>
 #include <string_view>
 #include <thread>
+#include <filesystem>
 
 
+
+typedef enum {
+    PE_INFO,
+    PE_WARNING,
+    PE_ERROR,
+    PE_FATAL
+} TypeLog;
+  
 
 class Logger{
 public:
   // Функция для инициализации Логгера 
-  static void init();
+  static void init(
+    const std::filesystem::path&
+  );
   
   static void shutdown();
-
-  enum TypeLog {
-    INFO,
-    WARNING,
-    ERROR,
-    FATAL
-  };
-  
 
   struct LogEntry{
     std::string msg;
@@ -47,6 +50,8 @@ private:
   static std::condition_variable_any log_cv;
   static std::atomic<bool> should_run;
 
+  // Коренной путь
+  static std::filesystem::path root;
 
 private:
   // Дополнительные функции

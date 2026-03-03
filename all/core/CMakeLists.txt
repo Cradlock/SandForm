@@ -6,6 +6,7 @@ set(CORE_SOURCES
   src/eventbus/eventbus.cpp
   src/resources/main.cpp
   src/utils/general.cpp 
+  src/utils/programm.cpp 
   src/resources/types/json.cpp
   src/resources/types/texture.cpp
 

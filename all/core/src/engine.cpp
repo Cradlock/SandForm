@@ -3,26 +3,30 @@
 #include "core/services/eventbus.h"
 #include "core/services/log.h"
 #include "core/services/resources.h"
+#include "core/utils.h"
 
 
 core::Engine::Engine(){
-
+  // Вычисляем место нахождение модулей
+  root = get_programm_root();  
 }
 
 
 void core::Engine::Init(){
-  // В первую очередть логгер 
-  Logger::init();
+  
+
+  // В первую очередь логгер 
+  Logger::init(root / "logs/");
   
   // Менеджер ресурсов
-  ResourceManager::init();
+  ResourceManager::init(root);
   
   // Шина событий 
-  EventBus::init();
+  EventBus::init(root);
 
   // Потом загружаем конфиги 
-  Config::init();
- 
+  Config::init(root);
+  
 }
 
 

@@ -1,7 +1,9 @@
 #pragma once 
 
 
+#include <filesystem>
 namespace core {
+
 
 class Engine{
 
@@ -20,6 +22,7 @@ public:
 private:
   void init_dynamic();
 
+  std::filesystem::path root;
 };
 
 }

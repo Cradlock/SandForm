@@ -1,10 +1,11 @@
 #include "core/utils.h"
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <sstream>
 #include <string>
 #include <chrono>
-
+#include <iostream>
 
 std::string get_current_time() {
     auto now = std::chrono::system_clock::now();
@@ -21,3 +22,24 @@ std::string get_current_time() {
     ss << std::put_time(&buf, "%Y-%m-%d %X");
     return ss.str();
 }
+
+
+void test_1(){
+  std::cout << 1 << std::endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

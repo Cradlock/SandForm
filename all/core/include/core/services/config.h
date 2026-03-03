@@ -4,6 +4,7 @@
 
 #include "core/error.h"
 #include "core/resources_types/json.h"
+#include "core/types.h"
 #include <cstdint>
 #include <filesystem>
 #include <string>
@@ -20,12 +21,16 @@ private:
   static std::filesystem::path settings_dir_path;
   
   // Хранилище конфигов 
-  std::unordered_map<std::string, ConfigObject> storage;
+  static std::unordered_map<std::string, ConfigObject> storage;
   
+  // Коренной путь
+  static std::filesystem::path root;
 public:
   
   // Инициализация
-  static void init();
+  static void init(
+    const std::filesystem::path&
+  );
 
   // Отключение от системы
   static void shutdown();
@@ -33,15 +38,16 @@ public:
   // Попытка подключить файл настроек
   static RESULT_CODE getConfig(std::string name, ConfigObject** out);
   
-  // Заявка на создание нового конфига 
-  static RESULT_CODE createConfig(ConfigObject** out);
+
 };
+
+
 
 
 class ConfigObject{
 public:
   // Конструктор
-  ConfigObject(std::string p);
+  ConfigObject(std::string p,JsonResource* file_p);
   
   // Выдача int 
   RESULT_CODE getInt(std::string path,int* out);
@@ -53,7 +59,6 @@ public:
   RESULT_CODE getFloat(std::string path,double* out);
   
 
-
   // Вставка int 
   RESULT_CODE setInt(std::string path,int in);
 
@@ -63,10 +68,12 @@ public:
   // Вставка float 
   RESULT_CODE setFloat(std::string path,double in);
   
+  // Проверка типа данных
+  TYPES getType(std::string path);
+
 private:
-  bool required; 
   JsonResource* file;
-  
+  std::string name; 
 };
 
 

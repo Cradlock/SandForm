@@ -42,7 +42,9 @@ public:
   //// Стандартные функции
   
   // Инициализация 
-  static void init(); 
+  static void init(
+    const std::filesystem::path&
+  ); 
 
   // Отключение
   static void shutdown(); 
@@ -77,6 +79,9 @@ private:
   
   // Реестр типов ресурсов 
   static std::unordered_map<std::string,ResourceCreator> creators;
+  
+  // Коренной путь
+  static std::filesystem::path root;
 
 };
 
@@ -92,6 +97,9 @@ class IResource{
     
     ResourceState getStatus();
     
+    std::string getName();
+
+
   protected:
     std::filesystem::path path;
     uint32_t filesize;

@@ -1,0 +1,24 @@
+{
+"window": {
+  "title": "sandform Engine",
+  "width": 1280,
+  "height": 720,
+  "fullscreen": false,
+  "vsync": true,
+  "resizable": true
+},
+"renderer": {
+  "clear_color": [0.1, 0.1, 0.1, 1.0],
+  "msaa_samples": 4,
+  "field_of_view": 45.0,
+  "near_plane": 0.1,
+  "far_plane": 1000.0,
+  "api_version_major": 4,
+  "api_version_minor": 5
+},
+"limits": {
+  "max_fps": 144,
+  "max_textures": 1024,
+  "shadow_map_resolution": 2048
+}
+}
