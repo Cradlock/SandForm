@@ -25,7 +25,7 @@ void core::Engine::Init(){
   EventBus::init(root);
 
   // Потом загружаем конфиги 
-  Config::init(root);
+  Config::init(root / "settings/");
   
 }
 

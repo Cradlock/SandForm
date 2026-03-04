@@ -12,29 +12,17 @@
 #include <mutex>
 #include <queue>
 #include <string>
+#include <string_view>
 #include <thread>
 #include <unordered_map>
-
+#include "core/resources_types/enums.h"
 
 class IResource;
 
+class Task;
+
 using ResourceCreator = 
 std::function<IResource*(const std::filesystem::path&)>;
-
-typedef enum {
-    RES_STATE_EMPTY = 0,      // Объект создан, но еще не в очереди
-    RES_STATE_IN_QUEUE,       // Ждет свободного воркера
-    RES_STATE_LOADING,        // Воркер прямо сейчас читает данные
-    RES_STATE_SUCCESS,        // Полностью готов к работе
-    
-    // Группа ошибок:
-    RES_STATE_ERROR_NOT_FOUND,      // Файл физически пропал
-    RES_STATE_ERROR_FORMAT,         // stbi_load вернул nullptr (битый файл)
-    RES_STATE_ERROR_MEMORY,         // Не хватило RAM/VRAM
-    RES_STATE_ERROR_UNKNOWN_TYPE,   // Нет креатора для такого расширения
-    RES_STATE_ERROR_INTERNAL,        // Что-то пошло не так в самом менеджере, 
-    RES_StATE_OS_ERROR              // операционная систем отказала
-} ResourceState;
 
 
 class ResourceManager{
@@ -48,23 +36,45 @@ public:
 
   // Отключение
   static void shutdown(); 
-  
-  // Создание ресурса
-  static RESULT_CODE create(const std::filesystem::path& path,IResource** out);
-  
-  // Создание ресурса (синхронный вариант)
-  static RESULT_CODE wait_create(const std::filesystem::path& path,IResource** out);
+    
+  // Загрузка ресурса 
+  static RESULT_CODE load(
+    const std::filesystem::path& path,
+    IResource** out,
+    ResourceLoadType tp
+  );
 
-  // Функция для воркера 
-  static void resource_worker();
-  
+  // Cоздание файла физически
+  static RESULT_CODE create(
+    const std::filesystem::path&,
+    IResource** out,
+    ResourceLoadType tp
+  );
+
   // Функция для регистрации типа ресурса
   static void register_creator( 
     std::string,
     ResourceCreator
   );
+  
+  // Функция освобождения ресурса
+  static RESULT_CODE release_resource(
+    IResource*
+  );
 
 private:
+
+  // Функция для воркера 
+  static void resource_worker();
+  
+ 
+  // Проверка ресурса в кеше 
+  static RESULT_CODE get_from_cache(const std::filesystem::path& path,IResource** out);
+  
+
+  // Проверка расширения
+  static RESULT_CODE check_extension(const std::filesystem::path&);
+
   // Отдельный поток 
   static std::thread worker;   
   static std::mutex mtx;
@@ -72,7 +82,7 @@ private:
   static std::condition_variable_any resource_cv;  
   
   // Очередь 
-  static std::queue<IResource*> load_queue;
+  static std::queue<Task> tasks;
 
   // Хранилище 
   static std::unordered_map<std::filesystem::path, IResource*> storage; 
@@ -90,8 +100,12 @@ class IResource{
     friend class ResourceManager;
 
     virtual void load() = 0;
+    
+    virtual void save() = 0;
 
-    virtual ~IResource() = 0;
+    virtual void create() = 0;
+
+    virtual void destroy() = 0;
     
     IResource(std::filesystem::path p,std::string_view ext);
     
@@ -99,15 +113,24 @@ class IResource{
     
     std::string getName();
 
-
   protected:
     std::filesystem::path path;
     uint32_t filesize;
     std::string ext;
 
-    std::atomic<uint32_t> ref_count; 
+    std::atomic<int32_t> ref_count; 
     std::atomic<ResourceState> state;
+
+    virtual ~IResource() = 0;
 };
 
+
+class Task{
+  public:
+    Task(ResourceTaskType,IResource*);
+  
+  private:
+    IResource* data;
+};
 
 

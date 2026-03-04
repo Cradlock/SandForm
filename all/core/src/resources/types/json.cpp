@@ -48,6 +48,19 @@ void JsonResource::load(){
 }
 
 
+void JsonResource::save(){
+
+}
+
+
+void JsonResource::create(){
+
+}
+
+void JsonResource::destroy(){
+
+}
+
 
 void JsonResource::registry(){
   ResourceManager::register_creator(".json", [](const std::filesystem::path& p) {

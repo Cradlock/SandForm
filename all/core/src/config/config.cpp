@@ -16,7 +16,7 @@ fs::path Config::root;
 
 fs::path Config::settings_dir_path = "settings/";
 std::unordered_map<
-std::string, ConfigObject
+std::string, ConfigObject*
 > Config::storage = {};
 
 
@@ -24,7 +24,7 @@ void Config::init(
   const fs::path& root_p
 ){
   root = root_p;
-  settings_dir_path = root / settings_dir_path;
+  settings_dir_path = root;
 
   if(!fs::exists(settings_dir_path)){
     fs::create_directories(settings_dir_path);
@@ -32,13 +32,13 @@ void Config::init(
    
   for(auto iter : fs::directory_iterator(settings_dir_path)){
     if(!iter.is_directory()){
-      std::string name = iter.path().filename().string();
+      std::string name = iter.path().stem().filename().string();
       IResource* file = nullptr;
       RESULT_CODE status = ResourceManager::wait_create(iter.path(), &file);
       if(status == RESULT_CODE::SUCCESS && file){
         JsonResource* data_file = static_cast<JsonResource*>(file);
-        ConfigObject cfg(name,data_file);
-
+        ConfigObject* cfg = new ConfigObject{name,data_file}; 
+        storage[name] = cfg;
       } else {
         Logger::log("Not load config file:"+name+" with status code:"+ std::to_string(status),TypeLog::PE_WARNING);
       }
@@ -48,7 +48,10 @@ void Config::init(
 }
 
 void Config::shutdown(){
-
+  for(auto& [name,cfg] : storage){
+    delete cfg;
+  }
+  storage.clear();
 }
 
 
@@ -63,10 +66,21 @@ RESULT_CODE Config::getConfig(
   auto it = storage.find(name);
   if(it == storage.end()){
     // Если нет новый конфиг
+    IResource* base_res = nullptr;
+    fs::path filename = name + ".json";
+
+    if( ResourceManager::wait_create(settings_dir_path / filename,&base_res) != RESULT_CODE::SUCCESS ){
+
+    }
+
+    JsonResource* file = static_cast<JsonResource*>(base_res);
+
+
     return CREATED_NEW;
   }
+
 // Если есть отдаем его
-  *out = &it->second;
+  *out = it->second;
   return SUCCESS;
 }
 

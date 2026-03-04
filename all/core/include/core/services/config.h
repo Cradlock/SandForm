@@ -1,4 +1,3 @@
-
 #pragma once 
 
 
@@ -7,6 +6,7 @@
 #include "core/types.h"
 #include <cstdint>
 #include <filesystem>
+#include <memory>
 #include <string>
 #include <string_view>
 #include <unordered_map>
@@ -21,10 +21,11 @@ private:
   static std::filesystem::path settings_dir_path;
   
   // Хранилище конфигов 
-  static std::unordered_map<std::string, ConfigObject> storage;
+  static std::unordered_map<std::string, ConfigObject*> storage;
   
   // Коренной путь
   static std::filesystem::path root;
+
 public:
   
   // Инициализация
@@ -34,11 +35,11 @@ public:
 
   // Отключение от системы
   static void shutdown();
-
+  
   // Попытка подключить файл настроек
   static RESULT_CODE getConfig(std::string name, ConfigObject** out);
   
-
+  
 };
 
 
@@ -46,6 +47,7 @@ public:
 
 class ConfigObject{
 public:
+  
   // Конструктор
   ConfigObject(std::string p,JsonResource* file_p);
   
@@ -57,7 +59,8 @@ public:
   
   // Выдача float  
   RESULT_CODE getFloat(std::string path,double* out);
-  
+ 
+
 
   // Вставка int 
   RESULT_CODE setInt(std::string path,int in);
@@ -75,13 +78,6 @@ private:
   JsonResource* file;
   std::string name; 
 };
-
-
-
-
-
-
-
 
 
 

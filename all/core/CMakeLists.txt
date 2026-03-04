@@ -1,15 +1,25 @@
 set(CORE_SOURCES
   src/config/config.cpp  
+  
   src/log/log.cpp 
+  
   src/tick/tick.cpp 
+  
   src/engine.cpp 
+  
   src/eventbus/eventbus.cpp
-  src/resources/main.cpp
+  
   src/utils/general.cpp 
   src/utils/programm.cpp 
+  
+
+  src/resources/resources_api.cpp
+  src/resources/resources_init.cpp
+  src/resources/resources_iresource.cpp
+  src/resources/resources_thread.cpp
+  src/resources/resources_utils.cpp
   src/resources/types/json.cpp
   src/resources/types/texture.cpp
-
 )
 
 
