@@ -61,23 +61,48 @@ public:
   static RESULT_CODE release_resource(
     IResource*
   );
-
+  
 private:
 
   // Функция для воркера 
   static void resource_worker();
   
- 
+  // Действие 
+  static RESULT_CODE action(
+    Task 
+  );
+   
   // Проверка ресурса в кеше 
-  static RESULT_CODE get_from_cache(const std::filesystem::path& path,IResource** out);
+  static RESULT_CODE get_from_cache(
+    const std::filesystem::path& path,
+    IResource** out
+  );
+    
+  // Создание или получение обьекта
+  static IResource* get_or_create(
+    const std::filesystem::path&
+  );
+
+  // Логика ожидания
+  static void wait_for_resource(IResource*);
   
+  // Добавление задачи
+  static void push_task(Task);
 
   // Проверка расширения
   static RESULT_CODE check_extension(const std::filesystem::path&);
+  
+  // Управление задачей
+  static void prepare_resource(
+    IResource*,
+    ResourceLoadType,
+    ResourceTaskType
+  );
 
   // Отдельный поток 
   static std::thread worker;   
-  static std::mutex mtx;
+  static std::mutex mtx_storage;
+  static std::mutex mtx_tasks;
   static std::atomic<bool> should_run; 
   static std::condition_variable_any resource_cv;  
   
@@ -103,8 +128,6 @@ class IResource{
     
     virtual void save() = 0;
 
-    virtual void create() = 0;
-
     virtual void destroy() = 0;
     
     IResource(std::filesystem::path p,std::string_view ext);
@@ -127,10 +150,14 @@ class IResource{
 
 class Task{
   public:
+    Task();
     Task(ResourceTaskType,IResource*);
-  
+    
+    ResourceTaskType getType();
+    IResource* getData();
   private:
     IResource* data;
+    ResourceTaskType type;
 };
 
 

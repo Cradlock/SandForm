@@ -1,4 +1,5 @@
 #include "core/resources_types/json.h"
+#include "core/resources_types/enums.h"
 #include "core/services/log.h"
 #include "core/services/resources.h"
 #include <exception>
@@ -49,13 +50,26 @@ void JsonResource::load(){
 
 
 void JsonResource::save(){
+  try{
+    std::ofstream file(path);
+    if(!file.is_open()){
+      state.store(ResourceState::RES_StATE_OS_ERROR);
+      return;
+    }
 
+    file << this->data.dump(4);
+
+    state.store(ResourceState::RES_STATE_SUCCESS);
+
+  } catch(const std::exception& error){
+    Logger::log("Save Error in JsonResource: " + path.string(), TypeLog::PE_WARNING);
+    state.store(ResourceState::RES_STATE_WRITE_ERROR);
+  }
 }
 
 
-void JsonResource::create(){
 
-}
+
 
 void JsonResource::destroy(){
 

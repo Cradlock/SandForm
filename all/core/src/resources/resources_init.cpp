@@ -15,7 +15,8 @@ std::string, ResourceCreator> ResourceManager::creators;
 
 std::thread ResourceManager::worker;
 
-std::mutex ResourceManager::mtx;
+std::mutex ResourceManager::mtx_storage;
+std::mutex ResourceManager::mtx_tasks;
 
 std::atomic<bool> ResourceManager::should_run{false};
 

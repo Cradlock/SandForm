@@ -14,8 +14,6 @@ public:
   
   void save() override;
 
-  void create() override;
-
   void destroy() override;
 
   static void registry(); 

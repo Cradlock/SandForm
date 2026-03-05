@@ -1,23 +1,23 @@
 
-
-
-
-
-
-
-
-
-
-
-
 #include "core/services/resources.h"
+
+
+
+
+
+
+
+
+
+
+
 void ResourceManager::resource_worker(){
   
   while(true){
-    Task* task = nullptr;
+    Task task;
 
     {
-      std::unique_lock<std::mutex> lock(mtx);
+      std::unique_lock<std::mutex> lock(mtx_tasks);
 
       resource_cv.wait(lock,[] {
         return !tasks.empty() || !should_run;
@@ -26,10 +26,12 @@ void ResourceManager::resource_worker(){
       if(!should_run && tasks.empty() ){
         break;
       }
-
+      
+      task = tasks.front();
+      tasks.pop();
     }
-
-
+    
+    action(task);
 
   }
   
