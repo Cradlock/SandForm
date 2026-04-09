@@ -21,7 +21,8 @@ private:
   static std::filesystem::path settings_dir_path;
   
   // Хранилище конфигов 
-  static std::unordered_map<std::string, ConfigObject*> storage;
+  static std::unordered_map<std::string,
+    std::unique_ptr<ConfigObject>> storage;
   
   // Коренной путь
   static std::filesystem::path root;
@@ -38,8 +39,8 @@ public:
   
   // Попытка подключить файл настроек
   static RESULT_CODE getConfig(std::string name, ConfigObject** out);
-  
-  
+ 
+private:
 };
 
 
@@ -47,32 +48,29 @@ public:
 
 class ConfigObject{
 public:
-  
+  friend class Config;
+
   // Конструктор
   ConfigObject(std::string p,JsonResource* file_p);
   
-  // Выдача int 
-  RESULT_CODE getInt(std::string path,int* out);
-  
-  // Выдача string  
-  RESULT_CODE getStr(std::string path,std::string* out);
-  
-  // Выдача float  
-  RESULT_CODE getFloat(std::string path,double* out);
  
-
-
-  // Вставка int 
-  RESULT_CODE setInt(std::string path,int in);
-
-  // Вставка string 
-  RESULT_CODE setStr(std::string path,std::string in);
+  template<typename T>
+  RESULT_CODE get(const std::string& path,T* out){
+    
+    return RESULT_CODE::SUCCESS;
+  }
+ 
+  template<typename T>
+  RESULT_CODE set(const std::string& path,T* in){
+    
+    return RESULT_CODE::SUCCESS;
+  }
   
-  // Вставка float 
-  RESULT_CODE setFloat(std::string path,double in);
-  
-  // Проверка типа данных
   TYPES getType(std::string path);
+  
+  void save();
+
+  ~ConfigObject();
 
 private:
   JsonResource* file;

@@ -21,6 +21,13 @@ void TextureResource::load(){
 
 }
 
+void TextureResource::save(){
+
+}
+
+void TextureResource::destroy(){
+
+}
 
 void TextureResource::registry(){
   auto creator = [] (const fs::path& path) {
@@ -29,6 +36,7 @@ void TextureResource::registry(){
 
   register_formats(creator,".png",".jpg",".jpeg",".tga",".bmp",".psd");
 }
+
 
 
 

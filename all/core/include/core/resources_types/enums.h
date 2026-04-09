@@ -16,8 +16,8 @@ typedef enum {
     RES_STATE_ERROR_MEMORY,         // Не хватило RAM/VRAM
     RES_STATE_ERROR_UNKNOWN_TYPE,   // Нет креатора для такого расширения
     RES_STATE_ERROR_INTERNAL,        // Что-то пошло не так в самом менеджере, 
-    RES_StATE_OS_ERROR,              // операционная систем отказала
-    RES_StATE_WRITE_ERROR            // Ошибка записи
+    RES_STATE_OS_ERROR,              // операционная систем отказала
+    RES_STATE_WRITE_ERROR            // Ошибка записи
                                   
 } ResourceState;
 
@@ -31,7 +31,6 @@ typedef enum {
 typedef enum {
   LOAD,
   SAVE,
-  CREATE,
   RELEASE,
   DESTROY 
 } ResourceTaskType;

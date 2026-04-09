@@ -10,6 +10,7 @@
 #include "core/services/log.h"
 #include "core/services/resources.h"
 #include <filesystem>
+#include <iostream>
 #include <mutex>
 #include <string_view>
 
@@ -99,10 +100,7 @@ RESULT_CODE ResourceManager::action(Task task){
 
   IResource* data = task.getData();
   switch (task.getType()) {
-    case ResourceTaskType::CREATE:
-      data->create();
-      break; 
-    
+   
     case ResourceTaskType::LOAD:
       data->load();
       break;
@@ -116,6 +114,7 @@ RESULT_CODE ResourceManager::action(Task task){
       break;
     
     case ResourceTaskType::SAVE:
+      data->save();
       break;
 
     default:
@@ -125,26 +124,63 @@ RESULT_CODE ResourceManager::action(Task task){
   return RESULT_CODE::SUCCESS;
 }
 
+
 void ResourceManager::prepare_resource(
   IResource* res,
   ResourceLoadType type_load, 
   ResourceTaskType type_task
 ){
   auto state = res->getStatus();
-  Task task(type_task,res);
-  
-  if(type_load == ResourceLoadType::SYNC){
-    if(state == ResourceState::RES_STATE_EMPTY){
-      action(task);
-    }else{
-      wait_for_resource(res);
+  Task task(type_task, res);
+
+  // Сценарий 1: Синхронное выполнение
+  if(type_load == ResourceLoadType::SYNC) {
+    
+    switch (type_task) {
+      case ResourceTaskType::LOAD:
+        // Загружаем только если ресурс еще не трогали
+        if(state == ResourceState::RES_STATE_EMPTY) {
+          action(task);
+        } else {
+          wait_for_resource(res);
+        }
+        break;
+
+      case ResourceTaskType::SAVE:
+        // Сохранять можно только то, что уже успешно загружено или создано
+        if(state >= ResourceState::RES_STATE_SUCCESS) {
+          action(task);
+        } else {
+          // Если ресурс еще грузится в другом потоке — ждем и потом сохраняем
+          wait_for_resource(res);
+          action(task);
+        }
+        break;
+
+      case ResourceTaskType::RELEASE:
+      case ResourceTaskType::DESTROY:
+        // Перед удалением обязательно ждем завершения всех операций
+        wait_for_resource(res);
+        action(task);
+        break;
+
+      default:
+        action(task);
+        break;
     }
-  }else{
-    res->state.store(ResourceState::RES_STATE_IN_QUEUE);
+
+  } 
+  // Сценарий 2: Асинхронное выполнение
+  else {
+    // Для загрузки ставим статус "в очереди", чтобы другие потоки знали об этом
+    if (type_task == ResourceTaskType::LOAD) {
+      res->state.store(ResourceState::RES_STATE_IN_QUEUE);
+    }
+    // Для SAVE статус менять не обязательно, чтобы не сломать чтение из ресурса
+    
     push_task(task);
   }
-
-
 }
+
 
 

@@ -17,7 +17,8 @@ public:
   // Отключение всех классов и модулей
   void Shutdown();
 
-
+  
+  std::filesystem::path getRoot() const;
 
 private:
   void init_dynamic();

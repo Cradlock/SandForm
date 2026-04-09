@@ -44,12 +44,19 @@ public:
     ResourceLoadType tp
   );
 
-  // Cоздание файла физически
+  // Cоздание пустого файла в памяти
   static RESULT_CODE create(
     const std::filesystem::path&,
     IResource** out,
     ResourceLoadType tp
   );
+  
+  // Сохранение измененении на диске
+  static RESULT_CODE save(
+    IResource* in,
+    ResourceLoadType tp
+  );
+  
 
   // Функция для регистрации типа ресурса
   static void register_creator( 
@@ -129,8 +136,9 @@ class IResource{
     virtual void save() = 0;
 
     virtual void destroy() = 0;
-    
-    IResource(std::filesystem::path p,std::string_view ext);
+  
+
+    IResource(const std::filesystem::path p,std::string_view ext);
     
     ResourceState getStatus();
     

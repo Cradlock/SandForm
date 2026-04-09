@@ -1,6 +1,8 @@
 #pragma once
 
 
+#include "core/error.h"
+#include "core/resources_types/json.h"
 #include "plugin_manager/plugin.h"
 #include <filesystem>
 #include <string>
@@ -8,16 +10,21 @@
 
 class PluginManager{
   
-  std::filesystem::path modules;
+  std::string modules_filename;
+  std::filesystem::path root; 
 
   std::vector<Plugin> plugins;
   
   std::string main_key;
 
 public:
-  PluginManager(std::filesystem::path p,std::string main_key);
+  PluginManager(const std::string&,std::string main_key);
   
-  bool init();
+  RESULT_CODE init(
+    const std::filesystem::path&
+  );
   
-  bool check(const nlohmann::json& obj);
+  RESULT_CODE load_modules(
+    const JsonResource*
+  );
 };

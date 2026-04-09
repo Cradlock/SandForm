@@ -2,7 +2,7 @@
 # Настройки проекта
 cmake_minimum_required(VERSION 3.15)
 
-project(sandform)
+project(sandvrable)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -39,10 +39,12 @@ add_subdirectory(all/plugin_manager)
 add_subdirectory(all/logic)
 
 
+
 # Подключение core и plugin_manager
 target_link_libraries(app PRIVATE 
   core 
   plugin_manager
+  logic
 )
 
 

@@ -3,6 +3,7 @@
 #include "core/services/eventbus.h"
 #include "core/services/log.h"
 #include "core/services/resources.h"
+#include "core/services/tick.h"
 #include "core/utils.h"
 
 
@@ -11,6 +12,9 @@ core::Engine::Engine(){
   root = get_programm_root();  
 }
 
+std::filesystem::path core::Engine::getRoot() const {
+  return this->root;
+}
 
 void core::Engine::Init(){
   
@@ -21,6 +25,9 @@ void core::Engine::Init(){
   // Менеджер ресурсов
   ResourceManager::init(root);
   
+  // Система тиков
+  TickManager::init();
+
   // Шина событий 
   EventBus::init(root);
 

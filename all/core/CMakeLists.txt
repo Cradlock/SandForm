@@ -1,13 +1,17 @@
 set(CORE_SOURCES
-  src/config/config.cpp  
+  src/config/config_init.cpp  
+  src/config/config_api.cpp  
+  src/config/config_utils.cpp  
+
   
   src/log/log.cpp 
   
-  src/tick/tick.cpp 
+  src/tick/tick_init.cpp 
   
   src/engine.cpp 
   
-  src/eventbus/eventbus.cpp
+  src/eventbus/eventbus_init.cpp
+  src/eventbus/eventbus_api.cpp
   
   src/utils/general.cpp 
   src/utils/programm.cpp 
@@ -18,6 +22,8 @@ set(CORE_SOURCES
   src/resources/resources_iresource.cpp
   src/resources/resources_thread.cpp
   src/resources/resources_utils.cpp
+  src/resources/resources_task.cpp
+  
   src/resources/types/json.cpp
   src/resources/types/texture.cpp
 )
@@ -30,9 +36,10 @@ target_include_directories(core PUBLIC
   include 
 )
 
-find_package(nlohmann_json CONFIG REQUIRED)
 
-target_link_libraries(core PRIVATE nlohmann_json::nlohmann_json)
+find_package(RapidJSON CONFIG REQUIRED)
+
+target_link_libraries(core PUBLIC rapidjson)
 
 
 

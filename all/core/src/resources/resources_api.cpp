@@ -1,16 +1,9 @@
-
-
-
-
-
-
-
-
 #include "core/error.h"
 #include "core/resources_types/enums.h"
 #include "core/services/log.h"
 #include "core/services/resources.h"
 #include <filesystem>
+#include <iostream>
 #include <mutex>
 
 
@@ -78,13 +71,31 @@ RESULT_CODE ResourceManager::create(
   
   IResource* res = get_or_create(path);
     
-  prepare_resource(res,type_load,ResourceTaskType::CREATE);
+  prepare_resource(res,type_load,ResourceTaskType::SAVE);
 
   *out = res;
   return RESULT_CODE::SUCCESS;
 }
 
 
+RESULT_CODE ResourceManager::save(
+    IResource* in,
+    ResourceLoadType tp
+){
+  if (!in) {
+    return RESULT_CODE::INVALID_PARAMETR;
+  } 
+
+  auto state = in->getStatus();
+  if(state > ResourceState::RES_STATE_SUCCESS){
+    return RESULT_CODE::OBJECT_ERROR_STATE;
+  }
+  
+  prepare_resource(in,tp, ResourceTaskType::SAVE);
+
+  return RESULT_CODE::SUCCESS;
+}
+ 
 
 
 

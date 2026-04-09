@@ -3,6 +3,7 @@
 
 
 
+#include "core/resources_types/json.h"
 #include <filesystem>
 #include <string>
 
@@ -16,8 +17,7 @@ class Plugin{
 
 public:
 
-    Plugin(const nlohmann::json& obj);
-
+  Plugin(const JsonResource* resource);
 
 };
 
