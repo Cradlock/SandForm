@@ -1,12 +1,11 @@
-#include "core/resources_types/json.h"
-#include "core/services/resources.h"
+#include "core/services/resources/Resources.h"
 #include <iostream>
 
 
 
 namespace fs = std::filesystem;
 
-std::unordered_map<fs::path, IResource*> ResourceManager::storage;
+std::unordered_map<fs::path, ResourceInternal*> ResourceManager::storage;
 
 std::queue<Task> ResourceManager::tasks;
 
@@ -30,7 +29,6 @@ void ResourceManager::init(
 ){
   root = root_p;
 
-  JsonResource::registry();
   
   should_run = true;
   worker = std::thread(resource_worker);

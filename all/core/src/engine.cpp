@@ -1,10 +1,10 @@
 #include "core/engine.h"
-#include "core/services/config.h"
-#include "core/services/eventbus.h"
-#include "core/services/log.h"
-#include "core/services/resources.h"
-#include "core/services/tick.h"
-#include "core/utils.h"
+#include "core/services/config/Config.h"
+#include "core/services/eventbus/Eventbus.h"
+#include "core/services/logger/Logger.h"
+#include "core/services/resources/Resources.h"
+#include "core/services/tick/Tick.h"
+#include "core/utils/prg.h"
 
 
 core::Engine::Engine(){

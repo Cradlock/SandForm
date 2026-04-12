@@ -5,10 +5,10 @@
 
 
 
-#include "core/error.h"
-#include "core/resources_types/enums.h"
-#include "core/services/log.h"
-#include "core/services/resources.h"
+#include "sfr/common/status_codes.h"
+#include "sfr/core/resources/states.h"
+#include "core/services/logger/Logger.h"
+#include "core/services/resources/Resources.h"
 #include <filesystem>
 #include <iostream>
 #include <mutex>
@@ -20,7 +20,7 @@ namespace fs = std::filesystem;
 
 RESULT_CODE ResourceManager::get_from_cache(
   const fs::path& path, 
-  IResource **out
+  Resource **out
 ){
   std::lock_guard<std::mutex> lock(mtx_storage);
   auto it = storage.find(fs::absolute(path));
@@ -76,13 +76,13 @@ IResource* ResourceManager::get_or_create(
   auto creator_it = creators.find(ext);
   if (creator_it == creators.end()) return nullptr;
 
-  IResource* res = creator_it->second(path);
+  Resource* res = creator_it->second(path);
   storage[path] = res;
   return res;
 }
 
 
-void ResourceManager::wait_for_resource(IResource* res) {
+void ResourceManager::wait_for_resource(Resource* res) {
     while (res->getStatus() < ResourceState::RES_STATE_SUCCESS) {
         std::this_thread::yield();
     }
@@ -98,7 +98,7 @@ void ResourceManager::push_task(Task task) {
 
 RESULT_CODE ResourceManager::action(Task task){
 
-  IResource* data = task.getData();
+  Resource* data = task.getData();
   switch (task.getType()) {
    
     case ResourceTaskType::LOAD:
@@ -126,7 +126,7 @@ RESULT_CODE ResourceManager::action(Task task){
 
 
 void ResourceManager::prepare_resource(
-  IResource* res,
+  Resource* res,
   ResourceLoadType type_load, 
   ResourceTaskType type_task
 ){

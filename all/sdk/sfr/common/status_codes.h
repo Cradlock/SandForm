@@ -1,9 +1,6 @@
 #pragma once 
 
 
-
-
-
 // Общие коды ошибок 
 typedef enum {
   SUCCESS,            // успешно
@@ -21,6 +18,5 @@ typedef enum {
 
 
 } RESULT_CODE;
-
 
 

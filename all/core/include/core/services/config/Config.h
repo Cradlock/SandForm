@@ -1,9 +1,8 @@
 #pragma once 
 
 
-#include "core/error.h"
-#include "core/resources_types/json.h"
-#include "core/types.h"
+#include "sfr/common/status_codes.h"
+#include "sfr/common/types.h"
 #include <cstdint>
 #include <filesystem>
 #include <memory>
@@ -51,7 +50,6 @@ public:
   friend class Config;
 
   // Конструктор
-  ConfigObject(std::string p,JsonResource* file_p);
   
  
   template<typename T>
@@ -73,7 +71,6 @@ public:
   ~ConfigObject();
 
 private:
-  JsonResource* file;
   std::string name; 
 };
 

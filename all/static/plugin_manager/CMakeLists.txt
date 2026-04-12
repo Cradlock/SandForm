@@ -25,7 +25,8 @@ target_include_directories(plugin_manager PRIVATE ${Boost_INCLUDE_DIRS})
 target_link_libraries(plugin_manager PRIVATE core)
 # Связь с Boost.DLL 
 target_link_libraries(plugin_manager PRIVATE ${Boost_LIBRARIES})
-
+# Связь c sdk
+target_link_libraries(core PUBLIC engine_sdk)
 
 
 

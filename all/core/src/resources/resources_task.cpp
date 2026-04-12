@@ -3,9 +3,11 @@
 
 
 
-#include "core/resources_types/enums.h"
-#include "core/services/resources.h"
-Task::Task(ResourceTaskType type_p,IResource* data_p) :
+#include "sfr/core/resources/states.h"
+#include "core/services/resources/Resources.h"
+
+
+Task::Task(ResourceTaskType type_p,Resource* data_p) :
 type(type_p),data(data_p)
 {
 
@@ -22,7 +24,7 @@ ResourceTaskType Task::getType(){
 
 
 
-IResource* Task::getData(){
+Resource* Task::getData(){
   return data;
 }
 

@@ -1,25 +1,10 @@
+
 #pragma once 
 
-#include "core/services/resources.h"
 #include <cstdint>
 #include <filesystem>
 #include <string>
 #include <string_view>
-
-
-std::string get_current_time();
-
-void test_1();
-
-template<typename CreatorFunc,typename... Args>
-void register_formats(CreatorFunc creator,Args... extensions){
-  (ResourceManager::register_creator(extensions, creator), ...);
-}
-
-
-std::filesystem::path get_programm_root();
-
-
 
 namespace fvn {
   constexpr uint32_t offset_basis = 2166136261u;
@@ -35,9 +20,6 @@ constexpr uint32_t str_to_hash(
     ? hash 
     : str_to_hash(str + 1,( hash ^ static_cast<uint32_t>(*str) * fvn::prime));
 }
-
-
-
 
 
 

@@ -33,10 +33,15 @@ add_custom_command(
 )
 
 
+add_library(engine_sdk INTERFACE)
+
+target_include_directories(engine_sdk INTERFACE "${CMAKE_SOURCE_DIR}/all/sdk")
+
+
 # Активация модулей 
 add_subdirectory(all/core)
-add_subdirectory(all/plugin_manager)
-add_subdirectory(all/logic)
+add_subdirectory(all/static/plugin_manager)
+add_subdirectory(all/dynamic/logic)
 
 
 
