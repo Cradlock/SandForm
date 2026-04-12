@@ -26,7 +26,7 @@ typedef enum {
 typedef enum {
   SYNC,
   ASYNC 
-} ResourceLoadType;
+} ResourceActionType;
 
 typedef enum {
   LOAD,
