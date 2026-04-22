@@ -1,18 +1,19 @@
 #pragma once 
 
 
-#include "sfr/core/resources/interface.h"
+#include "core/services/resources/in/resource.h"
+#include <sfr/core/resources/Interface.h>
 #include "sfr/core/resources/states.h"
 
 class Task{
   public:
     Task();
-    Task(ResourceTaskType,Resource*);
+    Task(ResourceTaskType,ResourceInternal*);
     
     ResourceTaskType getType();
-    Resource* getData();
+    ResourceInternal* getData();
   private:
-    Resource* data;
+    ResourceInternal* data;
     ResourceTaskType type;
 };
 

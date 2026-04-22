@@ -7,7 +7,7 @@
 #include "core/services/resources/Resources.h"
 
 
-Task::Task(ResourceTaskType type_p,Resource* data_p) :
+Task::Task(ResourceTaskType type_p,ResourceInternal* data_p) :
 type(type_p),data(data_p)
 {
 
@@ -24,7 +24,7 @@ ResourceTaskType Task::getType(){
 
 
 
-Resource* Task::getData(){
+ResourceInternal* Task::getData(){
   return data;
 }
 

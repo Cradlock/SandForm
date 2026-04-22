@@ -1,16 +1,23 @@
-#include "core/services/resources/Resources.h"
-#include <iostream>
+#include <memory>
+#include <sfr/common/types.h>
+#include "core/services/resources/in/provider.h"
+#include "core/services/resources/in/task.h"
+#include <array>
 
 
 
 namespace fs = std::filesystem;
 
-std::unordered_map<fs::path, ResourceInternal*> ResourceManager::storage;
+std::unordered_map<std::string, ResourceInternal*> ResourceManager::storage;
 
 std::queue<Task> ResourceManager::tasks;
 
-std::unordered_map<
-std::string, ResourceCreator> ResourceManager::creators;
+std::unordered_map<std::string, ResourceCreator> ResourceManager::creators;
+
+std::vector<std::unique_ptr<IvfsProvider>> ResourceManager::providers;
+
+
+std::unordered_map<std::string, ResourceVtable> ResourceManager::vtables;
 
 std::thread ResourceManager::worker;
 

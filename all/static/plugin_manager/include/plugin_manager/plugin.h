@@ -3,11 +3,9 @@
 
 
 
-#include "core/resources_types/json.h"
 #include <filesystem>
 #include <string>
 
-#include <nlohmann/json.hpp>
 
 class Plugin{
   bool required;
@@ -17,7 +15,7 @@ class Plugin{
 
 public:
 
-  Plugin(const JsonResource* resource);
+  Plugin();
 
 };
 

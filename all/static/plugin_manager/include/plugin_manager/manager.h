@@ -1,8 +1,7 @@
 #pragma once
 
 
-#include "core/error.h"
-#include "core/resources_types/json.h"
+#include <sfr/common/status_codes.h>
 #include "plugin_manager/plugin.h"
 #include <filesystem>
 #include <string>
@@ -25,6 +24,5 @@ public:
   );
   
   RESULT_CODE load_modules(
-    const JsonResource*
   );
 };

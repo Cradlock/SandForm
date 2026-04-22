@@ -1,7 +1,6 @@
 #include "core/engine.h"
-#include "core/error.h"
-#include "core/services/log.h"
-#include "core/utils.h"
+#include <sfr/common/status_codes.h>
+#include "core/services/logger/Logger.h"
 #include "plugin_manager/manager.h"
 #include "logic/hello/hello.h"
 // Основной двигатель

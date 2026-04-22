@@ -1,46 +1,48 @@
+#include "core/services/resources/in/manager.h"
 #include "sfr/common/status_codes.h"
+#include "sfr/core/resources/Interface.h"
+#include "sfr/core/resources/results.h"
 #include "sfr/core/resources/states.h"
 #include "core/services/logger/Logger.h"
 #include "core/services/resources/Resources.h"
-#include <filesystem>
-#include <iostream>
-#include <mutex>
-
-
-namespace fs = std::filesystem;
 
 
 
-RESULT_CODE ResourceManager::load(
-    const fs::path& path_p,
-    Resource** out,
-    ResourceLoadType type_load
+using RES_STREAM = std::pair<RESULT_CODE,std::unique_ptr<IStream>>;
+
+ResResource ResourceManager::load(
+    const std::string_view uri, 
+    ResourceActionType tp
 ){
- 
-  return RESULT_CODE::SUCCESS;
+  ResResource res = {
+    RESULT_CODE::SUCCESS,
+    nullptr 
+  }; 
+
+  
+  RES_STREAM stream_sh = ResourceManager::GetStream(uri, ResourceTaskType::LOAD);
+  if(stream_sh.first != RESULT_CODE::SUCCESS){
+    res.code = stream_sh.first;
+    return res;
+  }
+
+  if(tp == ResourceActionType::SYNC){
+// Доделай
+    
+  } 
+
+  return res;
 }
 
-RESULT_CODE ResourceManager::create(
-    const fs::path& path_p, 
-    Resource **out, 
-    ResourceLoadType type_load 
-){
-
- 
-
-  return RESULT_CODE::SUCCESS;
-}
 
 
-RESULT_CODE ResourceManager::save(
-    Resource* in,
-    ResourceLoadType tp
-){
- 
 
-  return RESULT_CODE::SUCCESS;
-}
- 
+
+
+
+
+
+
 
 
 

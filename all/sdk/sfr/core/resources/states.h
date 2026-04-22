@@ -32,7 +32,7 @@ typedef enum {
   LOAD,
   SAVE,
   RELEASE,
-  DESTROY 
+  CREATE 
 } ResourceTaskType;
 
 

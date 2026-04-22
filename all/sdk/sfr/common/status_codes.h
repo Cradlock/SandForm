@@ -15,7 +15,9 @@ typedef enum {
   OBJECT_ERROR_STATE, // Обьект не может сделать действие
 
   UNKNOW_ERROR,       // Неизвестная ошибка
-
+  UNCOMPATABLE_ACTION,// Действие не поддерживается
+  IO_ERROR,           // Техническая ошибка ввода-вывода 
+  SEEK_ERROR,         // Ошибка перехода курсора 
 
 } RESULT_CODE;
 

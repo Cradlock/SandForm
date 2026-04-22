@@ -1,6 +1,8 @@
 #pragma once 
 
 
+#include "sfr/common/status_codes.h"
+#include <cstdint>
 typedef enum {
   T_VOID,
   T_UNKNOW,
@@ -10,10 +12,8 @@ typedef enum {
   T_STRING,
   T_ARRAY,
   T_BOOL,
-  T_OBJECT
+  T_JSON_OBJECT
 } TYPES;
-
-
 
 
 
