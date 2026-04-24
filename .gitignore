@@ -3,6 +3,10 @@
 **/build_windows_x64/
 **/build_windows_x86/
 
-.cache/
-bin/
-bin.*
+**/.cache/
+**/bin/
+**/bin.*
+
+
+
+
