@@ -4,7 +4,8 @@ projects(another directory)/
     Protos/
         build.json 
         scripts/
-        assets/  
+        assets/
+        configs/
         build/ 
             Protos/
                 windows/
@@ -13,6 +14,8 @@ projects(another directory)/
                     x86 | x64 
 
 tools/  
+    configs/
+        modules.json 
     bin/
         /windows
             x86/
@@ -22,10 +25,7 @@ tools/
                 plugins/
                 libs/
         /linux 
-            x86/
-                plugins/
-                libs/
-            x64/
+           x64/
                 plugins/
                 libs/
 

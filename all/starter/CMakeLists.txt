@@ -1,4 +1,3 @@
-
 # Настройки проекта
 cmake_minimum_required(VERSION 3.15)
 
@@ -69,6 +68,17 @@ if(MINGW)
     endforeach()
 
 endif()
+
+if(UNIX AND NOT APPLE)
+  set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
+  set_target_properties(app PROPERTIES 
+    INSTALL_RPATH "$ORIGIN:$ORIGIN/libs"
+    BUILD_WITH_INSTALL_RPATH TRUE
+  )
+
+endif()
+
 
 
 
