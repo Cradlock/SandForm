@@ -42,7 +42,9 @@
 # Инициализация типов ресурсов разных модулей
 ```
 init(ResourceTypeMetadata {
-    Ext              {"png","jpeg"},
+    ResourceSelector {
+        extension = png,
+    },
     ResourceTypeName "texture",
     ResourceVtable   {...},
 });
@@ -51,7 +53,7 @@ init(ResourceTypeMetadata {
      \
   ```
   create TypeObject = {
-    ext             {"png","jpeg"},
+    ext             "png",
     name            "texture",
     ResourceVtable  {...},
     module_name     "graphics_directx"
@@ -60,10 +62,13 @@ init(ResourceTypeMetadata {
         \
          \
           \
-           \
         ```
-          
+        add_types(TypeObject);
+        types {
+            "png": []
+        } 
         ```
+
 
 
 

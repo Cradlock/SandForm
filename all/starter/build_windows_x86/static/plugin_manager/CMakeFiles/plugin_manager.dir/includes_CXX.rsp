@@ -1,0 +1,1 @@
+-I/home/grok/Dev/sandform/all/starter/static/plugin_manager/include -I/home/grok/Dev/sandform/all/starter/../sdk -isystem "/home/grok/vcpkg/installed/x86-mingw-dynamic/include"

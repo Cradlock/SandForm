@@ -1,0 +1,12 @@
+/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/app.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/edit_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/rebuild_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/static/plugin_manager/CMakeFiles/plugin_manager.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/static/plugin_manager/CMakeFiles/edit_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/static/plugin_manager/CMakeFiles/rebuild_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/logic/CMakeFiles/logic.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/logic/CMakeFiles/edit_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/logic/CMakeFiles/rebuild_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core/CMakeFiles/core.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core/CMakeFiles/edit_cache.dir
+/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,33 @@
+
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "linux",
+      "displayName": "Linux Build",
+      "binaryDir": "${sourceDir}/build_linux",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "~/cmake/toolchain/linux-build.cmake",
+        "CMAKE_PREFIX_PATH": "~/vcpkg/installed/x64-linux"
+      }
+    },
+    {
+      "name": "windows-x64",
+      "displayName": "Windows x64 MinGW",
+      "binaryDir": "${sourceDir}/build_windows_x64",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "~/cmake/toolchain/win-build-x64.cmake",
+        "CMAKE_PREFIX_PATH": "~/vcpkg/installed/x64-mingw-dynamic"
+      }
+    },
+    {
+      "name": "windows-x86",
+      "displayName": "Windows x86 MinGW (32-bit)",
+      "binaryDir": "${sourceDir}/build_windows_x86",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "~/cmake/toolchain/win-build-x86.cmake",
+        "CMAKE_PREFIX_PATH": "~/vcpkg/installed/x86-mingw-dynamic"
+      }
+    }
+  ]
+}

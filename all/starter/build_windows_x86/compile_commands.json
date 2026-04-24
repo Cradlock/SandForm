@@ -1,0 +1,116 @@
+[
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86",
+  "command": "/usr/bin/i686-w64-mingw32-g++  @CMakeFiles/app.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/app.dir/app.cpp.obj -c /home/grok/Dev/sandform/all/starter/app.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/app.cpp",
+  "output": "CMakeFiles/app.dir/app.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/static/plugin_manager",
+  "command": "/usr/bin/i686-w64-mingw32-g++  @CMakeFiles/plugin_manager.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/plugin_manager.dir/src/manager.cpp.obj -c /home/grok/Dev/sandform/all/starter/static/plugin_manager/src/manager.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/static/plugin_manager/src/manager.cpp",
+  "output": "static/plugin_manager/CMakeFiles/plugin_manager.dir/src/manager.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/logic",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dlogic_EXPORTS @CMakeFiles/logic.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/logic.dir/src/hello.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/logic/src/hello.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/logic/src/hello.cpp",
+  "output": "dynamic/logic/CMakeFiles/logic.dir/src/hello.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/config/config_init.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_init.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_init.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/config/config_init.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/config/config_api.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_api.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_api.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/config/config_api.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/config/config_utils.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_utils.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/config/config_utils.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/config/config_utils.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/log/log.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/log/log.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/log/log.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/log/log.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/tick/tick_init.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/tick/tick_init.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/tick/tick_init.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/tick/tick_init.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/engine.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/engine.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/engine.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/engine.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/eventbus/eventbus_init.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/eventbus/eventbus_init.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/eventbus/eventbus_init.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/eventbus/eventbus_init.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/eventbus/eventbus_api.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/eventbus/eventbus_api.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/eventbus/eventbus_api.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/eventbus/eventbus_api.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/utils/hash.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/hash.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/hash.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/utils/hash.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/utils/programm.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/programm.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/programm.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/utils/programm.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/utils/time.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/time.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/utils/time.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/utils/time.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/resources/resources_api.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_api.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_api.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/resources/resources_api.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/resources/resources_init.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_init.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_init.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/resources/resources_init.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/resources/resources_thread.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_thread.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_thread.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/resources/resources_thread.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/resources/resources_utils.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_utils.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_utils.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/resources/resources_utils.cpp.obj"
+},
+{
+  "directory": "/home/grok/Dev/sandform/all/starter/build_windows_x86/dynamic/core",
+  "command": "/usr/bin/i686-w64-mingw32-g++ -Dcore_EXPORTS @CMakeFiles/core.dir/includes_CXX.rsp -m32 -std=gnu++17 -o CMakeFiles/core.dir/src/resources/resources_task.cpp.obj -c /home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_task.cpp",
+  "file": "/home/grok/Dev/sandform/all/starter/dynamic/core/src/resources/resources_task.cpp",
+  "output": "dynamic/core/CMakeFiles/core.dir/src/resources/resources_task.cpp.obj"
+}
+]

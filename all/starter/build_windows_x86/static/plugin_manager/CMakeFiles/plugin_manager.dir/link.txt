@@ -1,0 +1,2 @@
+/usr/bin/i686-w64-mingw32-ar qc libplugin_manager.a CMakeFiles/plugin_manager.dir/src/manager.cpp.obj
+/usr/bin/i686-w64-mingw32-ranlib libplugin_manager.a
