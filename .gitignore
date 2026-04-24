@@ -1,5 +1,7 @@
-build_linux/
-build_windows/
+
+**/build_linux/
+**/build_windows_x64/
+**/build_windows_x86/
 
 .cache/
 bin/
