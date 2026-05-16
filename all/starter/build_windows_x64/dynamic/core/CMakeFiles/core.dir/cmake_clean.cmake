@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../bin/libcore.dll"
-  "../../bin/libcore.pdb"
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/libcore.dll"
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/libcore.pdb"
   "CMakeFiles/core.dir/src/config/config_api.cpp.obj"
   "CMakeFiles/core.dir/src/config/config_api.cpp.obj.d"
   "CMakeFiles/core.dir/src/config/config_init.cpp.obj"

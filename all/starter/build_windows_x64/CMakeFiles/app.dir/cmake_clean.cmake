@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/app.exe"
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/app.pdb"
   "CMakeFiles/app.dir/app.cpp.obj"
   "CMakeFiles/app.dir/app.cpp.obj.d"
-  "bin/app.exe"
-  "bin/app.pdb"
   "libapp.dll.a"
 )
 

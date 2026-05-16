@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../bin/liblogic.dll"
-  "../../bin/liblogic.pdb"
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/liblogic.dll"
+  "/home/grok/Dev/sandform/all/tools/bin/windows/x64/liblogic.pdb"
   "CMakeFiles/logic.dir/src/hello.cpp.obj"
   "CMakeFiles/logic.dir/src/hello.cpp.obj.d"
   "liblogic.dll.a"

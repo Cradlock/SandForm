@@ -15,7 +15,7 @@ projects(another directory)/
 
 tools/  
     configs/
-        modules.json 
+        modules.json
     bin/
         /windows
             x86/
@@ -25,13 +25,12 @@ tools/
                 plugins/
                 libs/
         /linux 
-           x64/
+            x64/
                 plugins/
                 libs/
 
 builder.dll
 sf.exe
-
 
 
 

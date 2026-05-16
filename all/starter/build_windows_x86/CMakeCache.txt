@@ -237,7 +237,8 @@ CMAKE_STRIP:FILEPATH=/usr/bin/i686-w64-mingw32-strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-CMAKE_TOOLCHAIN_FILE:STRING=~/cmake/toolchain/win-build-x86.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/grok/cmake/toolchain/win-build-x86.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -256,9 +257,6 @@ LIB_PATH_libwinpthread-1.dll:FILEPATH=/usr/x86_64-w64-mingw32/bin/libwinpthread-
 
 //The directory containing a CMake configuration file for RapidJSON.
 RapidJSON_DIR:PATH=/home/grok/vcpkg/installed/x86-mingw-dynamic/share/rapidjson
-
-//The directory containing a CMake configuration file for nlohmann_json.
-nlohmann_json_DIR:PATH=nlohmann_json_DIR-NOTFOUND
 
 //Value Computed by CMake
 sandform_builder_BINARY_DIR:STATIC=/home/grok/Dev/sandform/all/starter/build_windows_x86

@@ -5,7 +5,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_UNAME"
     description: "Path to a program."
@@ -58,23 +58,19 @@ events:
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
         - "/usr/lib/rustup/bin"
-...
-
----
-events:
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       The target system is: Windows -  - i686
-      The host system is: Linux - 6.19.12-zen1-1-zen - x86_64
+      The host system is: Linux - 7.0.3-zen1-2-zen - x86_64
   -
     kind: "find-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -148,7 +144,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_WITH_PATH"
     description: "Path to a program."
@@ -209,7 +205,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -248,7 +244,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /usr/bin/i686-w64-mingw32-gcc 
@@ -269,7 +265,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -318,7 +314,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -367,7 +363,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -416,7 +412,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -465,7 +461,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -514,7 +510,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -563,7 +559,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -612,7 +608,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -661,7 +657,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -710,7 +706,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -759,7 +755,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -831,7 +827,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -916,7 +912,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1001,7 +997,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_WITH_PATH"
     description: "Path to a program."
@@ -1062,7 +1058,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -1101,7 +1097,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /usr/bin/i686-w64-mingw32-g++ 
@@ -1122,7 +1118,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1207,7 +1203,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1294,7 +1290,7 @@ events:
       - "/usr/share/cmake/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
       - "/usr/share/cmake/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
       - "/usr/share/cmake/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
     description: "RC compiler"
@@ -1366,12 +1362,12 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8"
-      binary: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8"
+      source: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE"
+      binary: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "-m32"
@@ -1381,13 +1377,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8'
+        Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_051d6/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_051d6.dir/build.make CMakeFiles/cmTC_051d6.dir/build
-        make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8'
-        Building C object CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj
-        /usr/bin/i686-w64-mingw32-gcc   -m32    -v -o CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_06c13/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_06c13.dir/build.make CMakeFiles/cmTC_06c13.dir/build
+        make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE'
+        Building C object CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/i686-w64-mingw32-gcc   -m32    -v -o CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc
         Target: i686-w64-mingw32
@@ -1395,8 +1391,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_051d6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m32 -mtune=generic -march=pentiumpro -version -o /tmp/cc0x0yAA.s
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_06c13.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccw8Du5I.s
         GNU C23 (GCC) version 15.2.0 (i686-w64-mingw32)
         	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1410,14 +1406,14 @@ events:
          /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/include
         End of search list.
         Compiler executable checksum: b1739a8080da5873b02a7fa2c2919bf0
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj /tmp/cc0x0yAA.s
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj /tmp/ccw8Du5I.s
         GNU assembler version 2.46.0 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.46.0.20260210
         COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/
         LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_051d6.exe
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_051d6.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_06c13.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06c13.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper
@@ -1428,16 +1424,16 @@ events:
         gcc version 15.2.0 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/
         LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_051d6.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_051d6.'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHb2JXT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_051d6.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_051d6.dir/objects.a --no-whole-archive --out-implib libcmTC_051d6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_06c13.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_06c13.'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdvUQIH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_06c13.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_06c13.dir/objects.a --no-whole-archive --out-implib libcmTC_06c13.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHb2JXT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_051d6.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_051d6.dir/objects.a --no-whole-archive --out-implib libcmTC_051d6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
+        /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdvUQIH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_06c13.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_06c13.dir/objects.a --no-whole-archive --out-implib libcmTC_06c13.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.46.0.20260210
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_051d6.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_051d6.'
-        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_051d6.dir/objects.a
-        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_051d6.dir/objects.a @CMakeFiles/cmTC_051d6.dir/objects1.rsp
-        /usr/bin/i686-w64-mingw32-gcc -m32   -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_051d6.dir/objects.a -Wl,--no-whole-archive -o cmTC_051d6.exe -Wl,--out-implib,libcmTC_051d6.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        make[1]: Leaving directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8'
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_06c13.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_06c13.'
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_06c13.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_06c13.dir/objects.a @CMakeFiles/cmTC_06c13.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-gcc -m32   -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_06c13.dir/objects.a -Wl,--no-whole-archive -o cmTC_06c13.exe -Wl,--out-implib,libcmTC_06c13.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        make[1]: Leaving directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE'
         
       exitCode: 0
   -
@@ -1445,7 +1441,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -1465,18 +1461,18 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8']
+        ignore line: [Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_051d6/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_051d6.dir/build.make CMakeFiles/cmTC_051d6.dir/build]
-        ignore line: [make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-Unqgj8']
-        ignore line: [Building C object CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/usr/bin/i686-w64-mingw32-gcc   -m32    -v -o CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_06c13/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_06c13.dir/build.make CMakeFiles/cmTC_06c13.dir/build]
+        ignore line: [make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-6Yk8HE']
+        ignore line: [Building C object CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/bin/i686-w64-mingw32-gcc   -m32    -v -o CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc]
         ignore line: [Target: i686-w64-mingw32]
@@ -1484,8 +1480,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/']
-        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_051d6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m32 -mtune=generic -march=pentiumpro -version -o /tmp/cc0x0yAA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1 -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_06c13.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccw8Du5I.s]
         ignore line: [GNU C23 (GCC) version 15.2.0 (i686-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1499,14 +1495,14 @@ events:
         ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b1739a8080da5873b02a7fa2c2919bf0]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/']
-        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj /tmp/cc0x0yAA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj /tmp/ccw8Du5I.s]
         ignore line: [GNU assembler version 2.46.0 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.46.0.20260210]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_051d6.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_051d6.exe]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_051d6.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_06c13.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_06c13.exe]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06c13.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper]
@@ -1517,13 +1513,13 @@ events:
         ignore line: [gcc version 15.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_051d6.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_051d6.']
-        link line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHb2JXT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_051d6.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_051d6.dir/objects.a --no-whole-archive --out-implib libcmTC_051d6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_06c13.exe' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_06c13.']
+        link line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdvUQIH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_06c13.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_06c13.dir/objects.a --no-whole-archive --out-implib libcmTC_06c13.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccHb2JXT.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccdvUQIH.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -1545,7 +1541,7 @@ events:
           arg [i386pe] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_051d6.exe] ==> ignore
+          arg [cmTC_06c13.exe] ==> ignore
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o]
           arg [-L/usr/lib/gcc/i686-w64-mingw32/15.2.0] ==> dir [/usr/lib/gcc/i686-w64-mingw32/15.2.0]
@@ -1553,10 +1549,10 @@ events:
           arg [-L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles/cmTC_051d6.dir/objects.a] ==> ignore
+          arg [CMakeFiles/cmTC_06c13.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_051d6.dll.a] ==> ignore
+          arg [libcmTC_06c13.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1580,7 +1576,7 @@ events:
           arg [-lkernel32] ==> lib [kernel32]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHb2JXT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_051d6.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_051d6.dir/objects.a --no-whole-archive --out-implib libcmTC_051d6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdvUQIH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -o cmTC_06c13.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_06c13.dir/objects.a --no-whole-archive --out-implib libcmTC_06c13.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -1602,7 +1598,7 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Running the C compiler's linker: "/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.46.0.20260210
@@ -1611,12 +1607,12 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon"
-      binary: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon"
+      source: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY"
+      binary: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-m32"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1627,13 +1623,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon'
+        Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0322f/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_0322f.dir/build.make CMakeFiles/cmTC_0322f.dir/build
-        make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon'
-        Building CXX object CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj
-        /usr/bin/i686-w64-mingw32-g++   -m32    -v -o CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c59ad/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c59ad.dir/build.make CMakeFiles/cmTC_c59ad.dir/build
+        make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY'
+        Building CXX object CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj
+        /usr/bin/i686-w64-mingw32-g++   -m32    -v -o CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++
         Target: i686-w64-mingw32
@@ -1641,8 +1637,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0322f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccFRkcpv.s
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c59ad.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccYQVt5f.s
         GNU C++17 (GCC) version 15.2.0 (i686-w64-mingw32)
         	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1659,14 +1655,14 @@ events:
          /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/include
         End of search list.
         Compiler executable checksum: f7a6584b4fce395bf015ac6dc556193a
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccFRkcpv.s
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccYQVt5f.s
         GNU assembler version 2.46.0 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.46.0.20260210
         COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/
         LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_0322f.exe
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0322f.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c59ad.exe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c59ad.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper
@@ -1677,16 +1673,16 @@ events:
         gcc version 15.2.0 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/
         LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_0322f.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_0322f.'
-         /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccogJ8IG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_0322f.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_0322f.dir/objects.a --no-whole-archive --out-implib libcmTC_0322f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_c59ad.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_c59ad.'
+         /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j4l7y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c59ad.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_c59ad.dir/objects.a --no-whole-archive --out-implib libcmTC_c59ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccogJ8IG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_0322f.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_0322f.dir/objects.a --no-whole-archive --out-implib libcmTC_0322f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
+        /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j4l7y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c59ad.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_c59ad.dir/objects.a --no-whole-archive --out-implib libcmTC_c59ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.46.0.20260210
-        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_0322f.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_0322f.'
-        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_0322f.dir/objects.a
-        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_0322f.dir/objects.a @CMakeFiles/cmTC_0322f.dir/objects1.rsp
-        /usr/bin/i686-w64-mingw32-g++ -m32   -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_0322f.dir/objects.a -Wl,--no-whole-archive -o cmTC_0322f.exe -Wl,--out-implib,libcmTC_0322f.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        make[1]: Leaving directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon'
+        COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_c59ad.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_c59ad.'
+        /usr/bin/cmake -E rm -f CMakeFiles/cmTC_c59ad.dir/objects.a
+        /usr/bin/i686-w64-mingw32-ar qc CMakeFiles/cmTC_c59ad.dir/objects.a @CMakeFiles/cmTC_c59ad.dir/objects1.rsp
+        /usr/bin/i686-w64-mingw32-g++ -m32   -v -Wl,-v -Wl,--whole-archive CMakeFiles/cmTC_c59ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_c59ad.exe -Wl,--out-implib,libcmTC_c59ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        make[1]: Leaving directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY'
         
       exitCode: 0
   -
@@ -1694,7 +1690,7 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -1720,18 +1716,18 @@ events:
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon']
+        ignore line: [Change Dir: '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0322f/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_0322f.dir/build.make CMakeFiles/cmTC_0322f.dir/build]
-        ignore line: [make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-rnYXon']
-        ignore line: [Building CXX object CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/usr/bin/i686-w64-mingw32-g++   -m32    -v -o CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c59ad/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c59ad.dir/build.make CMakeFiles/cmTC_c59ad.dir/build]
+        ignore line: [make[1]: Entering directory '/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/CMakeScratch/TryCompile-kyhcwY']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/usr/bin/i686-w64-mingw32-g++   -m32    -v -o CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++]
         ignore line: [Target: i686-w64-mingw32]
@@ -1739,8 +1735,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/']
-        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0322f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccFRkcpv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/cc1plus -quiet -v -D_REENTRANT /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c59ad.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m32 -mtune=generic -march=pentiumpro -version -o /tmp/ccYQVt5f.s]
         ignore line: [GNU C++17 (GCC) version 15.2.0 (i686-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1757,14 +1753,14 @@ events:
         ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f7a6584b4fce395bf015ac6dc556193a]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/']
-        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccFRkcpv.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/']
+        ignore line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/as -v --32 -o CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccYQVt5f.s]
         ignore line: [GNU assembler version 2.46.0 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.46.0.20260210]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_0322f.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_0322f.exe]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0322f.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'CMakeFiles/cmTC_c59ad.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c59ad.exe]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c59ad.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper]
@@ -1775,13 +1771,13 @@ events:
         ignore line: [gcc version 15.2.0 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-w64-mingw32/15.2.0/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_0322f.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_0322f.']
-        link line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccogJ8IG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_0322f.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_0322f.dir/objects.a --no-whole-archive --out-implib libcmTC_0322f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-m32' '-v' '-o' 'cmTC_c59ad.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro' '-dumpdir' 'cmTC_c59ad.']
+        link line: [ /usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2 -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j4l7y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c59ad.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_c59ad.dir/objects.a --no-whole-archive --out-implib libcmTC_c59ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccogJ8IG.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1j4l7y.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -1807,7 +1803,7 @@ events:
           arg [-u] ==> ignore
           arg [___deregister_frame_info] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_0322f.exe] ==> ignore
+          arg [cmTC_c59ad.exe] ==> ignore
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o]
           arg [-L/usr/lib/gcc/i686-w64-mingw32/15.2.0] ==> dir [/usr/lib/gcc/i686-w64-mingw32/15.2.0]
@@ -1815,10 +1811,10 @@ events:
           arg [-L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles/cmTC_0322f.dir/objects.a] ==> ignore
+          arg [CMakeFiles/cmTC_c59ad.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_0322f.dll.a] ==> ignore
+          arg [libcmTC_c59ad.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -1843,7 +1839,7 @@ events:
           arg [-lkernel32] ==> lib [kernel32]
           arg [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o] ==> obj [/usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccogJ8IG.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_0322f.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_0322f.dir/objects.a --no-whole-archive --out-implib libcmTC_0322f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld -plugin /usr/lib/gcc/i686-w64-mingw32/15.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-w64-mingw32/15.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1j4l7y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_c59ad.exe /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib/crt2.o /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtbegin.o -L/usr/lib/gcc/i686-w64-mingw32/15.2.0 -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib/../lib -L/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/lib -v --whole-archive CMakeFiles/cmTC_c59ad.dir/objects.a --no-whole-archive --out-implib libcmTC_c59ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 /usr/lib/gcc/i686-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': /usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -1863,250 +1859,10 @@ events:
       - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:5 (project)"
+      - "CMakeLists.txt:4 (project)"
     message: |
       Running the CXX compiler's linker: "/usr/lib/gcc/i686-w64-mingw32/15.2.0/../../../../i686-w64-mingw32/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.46.0.20260210
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:17 (find_package)"
-    name: "nlohmann_json"
-    configs:
-      -
-        filename: "nlohmann_json.cps"
-        kind: "cps"
-      -
-        filename: "nlohmann_jsonConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "nlohmann_json-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "nlohmann_json"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/pkgRedirects/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/pkgRedirects/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/pkgRedirects/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/Dev/sandform/all/starter/build_windows_x86/CMakeFiles/pkgRedirects/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/vcpkg/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/vcpkg/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/vcpkg/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/vcpkg/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/nlohmann_jsonConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/nlohmann_json-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/lib/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/share/cps/nlohmann_json.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found: null
-    search_context:
-      CMAKE_PREFIX_PATH:
-        - "~/vcpkg/installed/x86-mingw-dynamic"
-      ENV{PATH}:
-        - "/home/grok/vcpkg"
-        - "/home/grok/.local/share/nvim/mason/bin"
-        - "/home/grok/vcpkg"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr"
-        - "/usr/local"
-        - "/"
-...
-
----
-events:
   -
     kind: "find_package-v1"
     backtrace:
@@ -2173,246 +1929,33 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/RapidJSONConfig.cmake"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/RapidJSONConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/rapidjson-config.cmake"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/rapidjson-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/lib/cps/RapidJSON.cps"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/lib/cps/RapidJSON.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/lib/cps/rapidjson.cps"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/lib/cps/rapidjson.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/share/cps/RapidJSON.cps"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/share/cps/RapidJSON.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/grok/vcpkg/share/cps/rapidjson.cps"
+        path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/share/cps/rapidjson.cps"
         mode: "cps"
         reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/grok/.local/share/nvim/mason/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/jvm/default/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/site_perl/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/vendor_perl/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/bin/core_perl/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/RapidJSONConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/rapidjson-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/lib/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/lib/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/share/cps/RapidJSON.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/rustup/share/cps/rapidjson.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found: null
+    found:
+      path: "/home/grok/vcpkg/installed/x86-mingw-dynamic/share/rapidjson/RapidJSONConfig.cmake"
+      mode: "config"
+      version: "1.1.0"
     search_context:
       CMAKE_PREFIX_PATH:
         - "~/vcpkg/installed/x86-mingw-dynamic"
@@ -2434,14 +1977,10 @@ events:
         - "/usr"
         - "/usr/local"
         - "/"
-...
-
----
-events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:60 (find_file)"
+      - "CMakeLists.txt:59 (find_file)"
     mode: "file"
     variable: "LIB_PATH_libstdc++-6.dll"
     description: "Path to a file."
@@ -2520,7 +2059,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:60 (find_file)"
+      - "CMakeLists.txt:59 (find_file)"
     mode: "file"
     variable: "LIB_PATH_libgcc_s_seh-1.dll"
     description: "Path to a file."
@@ -2599,7 +2138,7 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "CMakeLists.txt:60 (find_file)"
+      - "CMakeLists.txt:59 (find_file)"
     mode: "file"
     variable: "LIB_PATH_libwinpthread-1.dll"
     description: "Path to a file."
